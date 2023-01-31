@@ -1,2 +1,88 @@
 @import url(./reset.css);
 @import url(./variaveis.css);
+body{
+    background-color: gray;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.slide{
+    width: 100vw;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide.mostrar{
+    opacity: 1;
+}
+
+.slide-1{
+    background-image: url(../images/imagem.png);
+}
+.slide-2{
+    background-image: url(../images/imagem\ \(1\).png);
+}
+.slide-3{
+    background-image: url(../images/imagem\ \(2\).png);
+}
+.slide-4{
+    background-image: url(../images/imagem\ \(3\).png);
+}
+
+.seta-voltar, .seta-avancar{
+    position: absolute;
+    z-index: 1;
+}
+
+.seta-voltar{
+    left: 4%;
+}
+.seta-avancar{
+    right: 4%;
+    transform: rotateY(180deg);
+}
+
+.conteudo{
+    background-color: white;
+    max-width: 620px;
+    padding: 50px;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+
+.titulo{
+    font-size: var(--size-titulo);
+    font-weight: 400;
+}
+.texto{
+    font-size: var(--size-paragrafo);
+    margin: 40px 0;
+    font-weight: 300;
+}
+.btn{
+    font-size: var(--size-btn);
+    font-weight: 700;
+}
+
+.btn-1{
+    color: var(--vermelho);
+}
+.btn-2{
+    color: var(--amarelo);
+}
+.btn-3{
+    color: var(--vinho);
+}
+.btn-4{
+    color: var(--azul);
+}
